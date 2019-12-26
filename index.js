@@ -17,5 +17,5 @@ app.use('/api', apiRoute);
 app.get('/' , (req, res)=> {
     res.sendFile(path.join(__dirname+'/assets/front/index.html'));
 })
-app.listen(5000 , () => console.log(`Express server is ready for requests on : ${PORT}`) );
+app.listen(PORT , () => console.log(`Express server is ready for requests on : ${PORT}`) );
 
